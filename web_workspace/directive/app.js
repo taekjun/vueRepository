@@ -4,8 +4,10 @@ import RawComponent from './raw.js';
 import InputComponent from './input.js';
 import ModelComponent from './exam01 교수님ver.js';
 import ListComponent from './list.js';
-import ForComponent from './exam02 교수님ver.js'
-import IfComponent from './if.js'
+import ForComponent from './exam02 교수님ver.js';
+import IfComponent from './if.js';
+import EventComponent from './event.js';
+import WatchComponent from './watch.js';
 
 const { createApp } = Vue
 
@@ -17,8 +19,9 @@ const template = `
     <!-- <ModelComponent /> -->
     <!-- <ListComponent /> -->
     <!-- <ForComponent/> -->
-    <IfComponent/>
-
+    <!-- <IfComponent/> -->
+    <!-- <EventComponent/> -->
+    <WatchComponent/>
 </div>
 `;
 
@@ -30,7 +33,9 @@ createApp({
         ModelComponent,
         ListComponent,
         ForComponent,
-        IfComponent
+        IfComponent,
+        EventComponent,
+        WatchComponent
     }
 })
 .mount('#app');

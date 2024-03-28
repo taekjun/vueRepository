@@ -19,7 +19,7 @@ let template = `
     <!-- v-for 과 v-if -->
     <template v-for="dan in 9" :key="dan">
         <div v-if="dan%2 == 0">
-            <p v-for="num in 9" :key="num">{{ dan }} x {{ num }} = {{ dan*num }}
+            <p v-for="num in 9" :key="num">{{ dan }} x {{ num }} = {{ dan*num }}</p>
         </div>
     </template>
 
