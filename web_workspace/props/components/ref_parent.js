@@ -13,9 +13,17 @@ let template = `
 
 export default{
     template,
+    data(){
+        return{
+            isMounted : false
+        }
+    },
+    mounted(){
+        this.isMounted = true;
+    },
     computed : {
         msg(){
-            return this.$refs.child.msg;
+            return !this.isMounted ? '' : this.$refs.child.msg;
         }
     },
     methods : {

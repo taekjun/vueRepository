@@ -30,7 +30,7 @@ export default{
     <div>
         <ChildComponent 
             v-bind:myname="first" 
-            v-on:update-name="getName"/>
+            v-on:update-name="getName"/>    <!-- $emit 사용시 getName()에서 괄호를빼야한다 -->
         <ChildComponent 
             v-bind:myname="second"/>
     </div>
